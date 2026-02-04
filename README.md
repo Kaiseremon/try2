@@ -36,9 +36,7 @@ git status
 
 Links:
 
-```md
 [GitHub](https://github.com)
-```
 ---
 
 Tables:
@@ -72,6 +70,7 @@ Short explanation of what this project does.
 ```bash
 git clone https://github.com/user/repo.git
 cd repo
+```
 ---
 
 - Keep README **simple**
