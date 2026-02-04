@@ -4,6 +4,11 @@
 #### Smaller heading
 ---
 
+This is a normal paragraph.
+
+This is a new paragraph.
+---
+
 **Bold text**
 *Italic text*
 ~~Strike-through~~
