@@ -31,12 +31,14 @@ Multi-line code block
 git clone https://github.com/user/repo.git
 cd repo
 git status
+```
 ---
 
 Links:
 
 ```md
 [GitHub](https://github.com)
+```
 ---
 
 Tables:
