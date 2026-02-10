@@ -92,9 +92,8 @@ To install the Playwright **browser binaries** (Chromium, Firefox, and Webkit), 
   npx playwright install
 ```
 
-After the successful installation, all the project configuration will be enlist inside: playwright.config.js
+After the successful installation, all the project configuration will be enlist inside the **playwright.config.js** file.
 
-===========================================
 
 
 ## Run the test case scenarios Locally:
@@ -104,29 +103,28 @@ In order to run this automation testing framework locally, please refer the foll
 
 ### 1. Running tests in the Same Browser Context (Serial Execution):
 
-Test Suite-1-Q1: To run all the test cases in a same browser context serially, execute:
+**Test Suite-1-Q1:** To run all the test cases in a same browser context serially, execute:
 
 ```bash
   npm run Q1serial
 ```
 
 
-Test Suite-2-Q2: To run all the test cases in a same browser context serially, execute:
+**Test Suite-2-Q2:** To run all the test cases in a same browser context serially, execute:
 
 ```bash
   npm run Q2serial
 ```
 
 
-
-Test Suite-3-Q3: to run all the test cases in a same browser context serially, execute:
+**Test Suite-3-Q3:** to run all the test cases in a same browser context serially, execute:
 
 ```bash
   npm run Q3serial
 ```
 
 
-Run All Sequentially: To run ALL the test suites (Q1, Q2, Q3) sequentially in a same browser context, execute:
+**Run All Sequentially:** To run ALL the test suites (Q1, Q2, Q3) sequentially in a same browser context, execute:
 
 ```bash
   npm run serial
@@ -136,29 +134,28 @@ Run All Sequentially: To run ALL the test suites (Q1, Q2, Q3) sequentially in a 
 
 ### 2. Running tests in Individual Browser Contexts (Parallel Execution):
 
-Test Suite-1-Q1: Run all the test cases in individual browser context parallelly, execute:
+**Test Suite-1-Q1:** Run all the test cases in individual browser context parallelly, execute:
 
 ```bash
   npm run Q1parallel
 ```
 
 
-Test Suite-2-Q2: Run all the test cases in individual browser context parallelly, execute:
+**Test Suite-2-Q2:** Run all the test cases in individual browser context parallelly, execute:
 
 ```bash
   npm run Q2parallel
 ```
 
 
-
-Test Suite-3-Q3: Run all the test cases in individual browser context parallelly, execute:
+**Test Suite-3-Q3:** Run all the test cases in individual browser context parallelly, execute:
 
 ```bash
   npm run Q3parallel
 ```
 
 
-Run all Parallelly: In order to run ALL the test suites in multiple browser context parallelly, execute:
+**Run all Parallelly:** In order to run ALL the test suites in multiple browser context parallelly, execute:
 
 ```bash
   npm run parallel
@@ -166,13 +163,45 @@ Run all Parallelly: In order to run ALL the test suites in multiple browser cont
 
 
 
-### 3. Running all tests in both Execution mode
+### 3. Running all tests in both Execution mode:
 
 Run all the test cases of all the test suits available in this project both serial and parallel context, execute:
 
 ```bash
   npm run test
 ```
+
+
+
+### 4. Get Test Report after the execution:
+
+**Allure Reporter:** To generate and view ALLURE report after the test execution, run:
+
+```bash
+  npm run reportAllure
+```
+
+
+**HTML Reportar:** To generate the playwright default HTML report after the test execution, run:
+
+```bash
+  npm run reportHTML
+```
+
+In order to close the currently generated report in your browser, run:
+
+```bash
+  ctrl+c
+```
+
+
+
+
+
+
+
+======================================
+
 
 
 ### 3. Install Playwright Browsers:
