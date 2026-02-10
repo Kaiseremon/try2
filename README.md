@@ -197,7 +197,21 @@ In order to close the currently generated report in your browser, run:
 
 
 
+## G. Cross-Browser Testing:##
 
+In order to run the test suits in Multiple browsers as Cross-Platform manner, setup the **playwright.config.js** file as bellow:
+
+| Environment Scenario | Setup following properties in ‘playwright.config.js’ file |
+|----------------------|-----------------------------------------------------------|
+|Run the test suites in one browser (workers) at a time, then to run in another type of browser (if available) | fullyParallel: true,
+workers: process.env.CI ? 1 : 2,
+projects: [
+    {name: 'Chromium', use: { browserName: 'chromium' },},
+    {name: 'Firefox', use: { browserName: 'firefox' },},
+    {name: 'webkit', use: { ...devices['Desktop Safari'] },},
+ |
+| git pull | Update local branch |
+| git push | Upload changes |
 
 
 
@@ -205,62 +219,10 @@ In order to close the currently generated report in your browser, run:
 
 
 
-### 3. Install Playwright Browsers:
-
-To install the Playwright **browser binaries** (Chromium, Firefox, and Webkit), run the following command:
-
-```bash
-  npx playwright install
-```
-
-After the successful installation, all the project configuration will be enlist inside: playwright.config.js
 
 
 
 
-
-
-
-
-
-
-Run test for Feature-1: Nopcommerce registration feature Test
-
-```bash
-  npm run registration
-```
-
-Run test for Feature-2: Nopcommerce login feature Test
-
-NOTE: Create a user with Email: hridoy@yopmail.com and Password: Test@@00
-
-```bash
-  npm run login
-```
-
-Run test for Feature-3: Nopcommerce place order feature Test
-
-```bash
-  npm run placeOrder
-```
-
-Run the all the features as suite
-
-```bash
-  npm run nopCommerce
-```
-
-Run all the feature parallely
-
-```bash
-  npm run test
-```
-
-Get report
-
-```bash
-  npm run getReport
-```
 
 
 
