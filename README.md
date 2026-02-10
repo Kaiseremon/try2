@@ -65,7 +65,7 @@ In order to run this automation testing framework locally, please refer the foll
 To get the project in your local machine, open a terminal and run the following git command:
 
 ```bash
-  git clone https://github.com/hridoydas/nopCommerce-automation.git
+  git clone https://github.com/Kaiseremon/swagLabs-automation.git
 ```
 
 Then Go to the project directory and select the branch swagLabs-automation.
@@ -104,21 +104,21 @@ In order to run this automation testing framework locally, please refer the foll
 
 ### 1. Running tests in the Same Browser Context (Serial Execution):
 
-**Test Suite-1-Q1:** To run all the test cases in a same browser context serially, execute:
+**Test Suite-1-Q1:** To run all the test cases of this test suite in a same browser context serially, execute:
 
 ```bash
   npm run Q1serial
 ```
 
 
-**Test Suite-2-Q2:** To run all the test cases in a same browser context serially, execute:
+**Test Suite-2-Q2:** To run all the test cases of this test suite in a same browser context serially, execute:
 
 ```bash
   npm run Q2serial
 ```
 
 
-**Test Suite-3-Q3:** to run all the test cases in a same browser context serially, execute:
+**Test Suite-3-Q3:** to run all the test cases of this test suite in a same browser context serially, execute:
 
 ```bash
   npm run Q3serial
@@ -135,21 +135,21 @@ In order to run this automation testing framework locally, please refer the foll
 
 ### 2. Running tests in Individual Browser Contexts (Parallel Execution):
 
-**Test Suite-1-Q1:** Run all the test cases in individual browser context parallelly, execute:
+**Test Suite-1-Q1:** Run all the test cases of this test suite in individual browser context parallelly, execute:
 
 ```bash
   npm run Q1parallel
 ```
 
 
-**Test Suite-2-Q2:** Run all the test cases in individual browser context parallelly, execute:
+**Test Suite-2-Q2:** Run all the test cases of this test suite in individual browser context parallelly, execute:
 
 ```bash
   npm run Q2parallel
 ```
 
 
-**Test Suite-3-Q3:** Run all the test cases in individual browser context parallelly, execute:
+**Test Suite-3-Q3:** Run all the test cases of this test suite in individual browser context parallelly, execute:
 
 ```bash
   npm run Q3parallel
@@ -223,7 +223,7 @@ To run the test suites in **two same browsers** (workers) at a time, then run in
 ```
 
 
-To run the test suites in **all the available browsers** (workers) parallelly based on the number of CPU cores on your machine, replace/overwrite the following properties of the **playwright.config.js** file:
+To run the test suites in **all the available browsers** parallelly based on the number of CPU cores on your machine, replace the following properties of **playwright.config.js** file (prone to CPU race condition):
 
 ```bash
   fullyParallel: true,
@@ -235,36 +235,47 @@ To run the test suites in **all the available browsers** (workers) parallelly ba
 ```
 
 
-
-
-
+=====================================
 ======================================
 
+## H. Demo Videos on each execution:
+
+### 1. Running tests in the Same Browser Context (Serial Execution):
+
+- **Test Suite-1-Q1:** Running all the test cases of this test suite in a same browser context serially:
+  - URL:https://drive.google.com/file/d/1YxGRwqFixKs_ZLF76lMpSng1kg3i9-Cl/view?usp=sharing
+
+- **Test Suite-2-Q2:** Running all the test cases of this test suite in a same browser context serially:
+  - URL:https://drive.google.com/file/d/1cyn3d_LqbYApYhFm8Vp5MQhrJrJBNtkY/view?usp=sharing
+
+- **Test Suite-3-Q3:** Running all the test cases of this test suite in a same browser context serially:
+  - URL:https://drive.google.com/file/d/1ucSZYlo-Kxv6yKwd_7ETGevS-x0qZOk8/view?usp=sharing
+
+- **Run All Sequentially:** Running ALL the test suites (Q1, Q2, Q3) sequentially in a same browser context:
+  - URL:https://drive.google.com/file/d/17b7uM_i0RzVnFc2j6PrgNQP9yLktk6xP/view?usp=sharing
+
+
+### 2. Running tests in Individual Browser Contexts (Parallel Execution):
+
+- **Test Suite-1-Q1:** Running all the test cases of this test suite in individual browser context parallelly:
+  - URL:https://drive.google.com/file/d/10hPirdH27JIVHbw_9R9Xp9CIuizWef0F/view?usp=sharing
+
+- **Test Suite-2-Q2:** Running all the test cases of this test suite in individual browser context parallelly:
+  - URL:https://drive.google.com/file/d/1FgULTu3aGhunVno04qylD9Kb2czaLbaK/view?usp=sharing
+
+- **Test Suite-3-Q3:** Running all the test cases of this test suite in individual browser context parallelly:
+  - URL:https://drive.google.com/file/d/1cybIHy7mBdT4v8nn8guHf0kXTabt7J9L/view?usp=sharing
+
+- **Run all Parallelly:** Running ALL the test suites in multiple browser context parallelly:
+  - URL:https://drive.google.com/file/d/1VyMRVFvBrHyjl5uZI177UmEgNlb4kFO2/view?usp=sharing
+
+
+### 3. Running all tests in both Execution mode:
+
+- **Full suite journey:** Running all the test cases of all the test suits available in this project both serial and parallel context:
+  - URL:https://drive.google.com/file/d/1wH7PPoLBqJXD-PtGXTH4p1AtE1vm1hMx/view?usp=sharing
 
 
 
-
-
-
-
-
-
-## Demo
-
-Feature-1: Nopcommerce registration feature Test.
-
-URL: https://drive.google.com/file/d/15dcSjE1mj1hRvMjWboz4zqjbr8PPwhQE/view?usp=sharing
-
-Feature-2: Nopcommerce login feature Test.
-
-URL: https://drive.google.com/file/d/1DWLhmH4fDDFzo_HoQkGCq2b4OWsKyQif/view?usp=drive_link
-
-Feature-3: Nopcommerce place order feature Test.
-
-URL: https://drive.google.com/file/d/1QnDthsfU-xZ2Gu9aoDE75Q33TOmMOY7r/view?usp=sharing
-
-Full suite journey and get allure report.
-
-URL: https://drive.google.com/file/d/1RaTPeka7LPpXMHGQoj6a2vzeJ6e1H2dC/view?usp=sharing
 
 
