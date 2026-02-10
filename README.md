@@ -5,7 +5,7 @@ using Playwright with JavaScript.
 
 - Project URL: https://www.saucedemo.com/
 
-- Packages used: playwright, playwright-core. Jest, chai, allure-playwright, allure-commandline.
+- Packages: playwright, playwright-core. Jest, chai, allure-playwright, allure-commandline.
 
 
 
@@ -21,7 +21,7 @@ The objective of this project is to perform automated UI and functionality testi
 
 1. **Test Suite-1-Q1:** Try login with *‘locked_out_user’* and verify the error message.
 
-2. **Test Suite-2-Q2:** Log in with *‘standard_user’*. Then, from the hamburger menu, *reset the App State. Add any three items to the cart. Navigate to the final checkout page, verify the product name and total price. Finish the purchase and verify the successful order message. Then, reset the App State again and log out.
+2. **Test Suite-2-Q2:** Log in with *‘standard_user’*. Then, from the hamburger menu, reset the App State. Add any three items to the cart. Navigate to the final checkout page, verify the product name and total price. Finish the purchase and verify the successful order message. Then, reset the App State again and log out.
 
 3. **Test Suite-3-Q3:** Login with *‘performance_glitch_user’* and reset the App State. Then filter by name (Z to A) and select the first product into the cart. Then navigate up to the final checkout page and verify all the products' names and the total price. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
 
@@ -55,7 +55,7 @@ Besides, **Allure reporter** is used to get the report after completing the test
 
 
 
-## Run Locally
+## Installations
 
 In order to run this automation testing framework locally, please refer the following sections carefully:
 
@@ -77,22 +77,120 @@ Then Go to the project directory and select the branch swagLabs-automation.
 
 ### 2. Install Project Dependencies
 
-Install the necessary project dependencies as defined in the 'package.json' file using npm:
+Install the necessary project dependencies as defined in the **package.json** file using npm:
 
 ```bash
   npm install
 ```
 
-To install the Playwright browser binaries (Chromium, Firefox, and Webkit), run the following command:
+
+### 3. Install Playwright Browsers:
+
+To install the Playwright **browser binaries** (Chromium, Firefox, and Webkit), run the following command:
 
 ```bash
   npx playwright install
 ```
 
-test configuration is available inside: playwright.config.js
-
+After the successful installation, all the project configuration will be enlist inside: playwright.config.js
 
 ===========================================
+
+
+## Run the test case scenarios Locally:
+
+In order to run this automation testing framework locally, please refer the following sections carefully:
+
+
+### 1. Running tests in the Same Browser Context (Serial Execution):
+
+Test Suite-1-Q1: To run all the test cases in a same browser context serially, execute:
+
+```bash
+  npm run Q1serial
+```
+
+
+Test Suite-2-Q2: To run all the test cases in a same browser context serially, execute:
+
+```bash
+  npm run Q2serial
+```
+
+
+
+Test Suite-3-Q3: to run all the test cases in a same browser context serially, execute:
+
+```bash
+  npm run Q3serial
+```
+
+
+Run All Sequentially: To run ALL the test suites (Q1, Q2, Q3) sequentially in a same browser context, execute:
+
+```bash
+  npm run serial
+```
+
+
+
+### 2. Running tests in Individual Browser Contexts (Parallel Execution):
+
+Test Suite-1-Q1: Run all the test cases in individual browser context parallelly, execute:
+
+```bash
+  npm run Q1parallel
+```
+
+
+Test Suite-2-Q2: Run all the test cases in individual browser context parallelly, execute:
+
+```bash
+  npm run Q2parallel
+```
+
+
+
+Test Suite-3-Q3: Run all the test cases in individual browser context parallelly, execute:
+
+```bash
+  npm run Q3parallel
+```
+
+
+Run all Parallelly: In order to run ALL the test suites in multiple browser context parallelly, execute:
+
+```bash
+  npm run parallel
+```
+
+
+
+### 3. Running all tests in both Execution mode
+
+Run all the test cases of all the test suits available in this project both serial and parallel context, execute:
+
+```bash
+  npm run test
+```
+
+
+### 3. Install Playwright Browsers:
+
+To install the Playwright **browser binaries** (Chromium, Firefox, and Webkit), run the following command:
+
+```bash
+  npx playwright install
+```
+
+After the successful installation, all the project configuration will be enlist inside: playwright.config.js
+
+
+
+
+
+
+
 
 
 
