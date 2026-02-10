@@ -7,7 +7,7 @@ using Playwright with JavaScript.
 
 - Packages: playwright, playwright-core. Jest, chai, allure-playwright, allure-commandline.
 
-
+<br>
 
 ## A. Objective:
 
@@ -39,7 +39,6 @@ Besides, **Allure reporter** is used to get the report after completing the test
 
 If you have not installed already, the following tools are required to install in order to run this project flawlessly:
 
-
 | Tools | Scope |
 |--------|------------|
 | [Node.js](https://nodejs.org/) | npm package manager to run Playwright using JavaScript |
@@ -51,7 +50,9 @@ If you have not installed already, the following tools are required to install i
 
 ## D. Install Dependencies:
 
-In order to run this automation testing framework locally, please refer the following sections carefully:
+In order to run this automation framework locally, please refer the following sections carefully:
+1. Open VS code.
+2. Open terminal (… → Terminal → New Terminal).
 
 
 ### 1. Clone the project:
@@ -68,7 +69,6 @@ Then Go to the project directory and select the branch swagLabs-automation.
   cd swagLabs-automation
 ```
 
-
 ### 2. Install Project Dependencies
 
 Install the necessary project dependencies as defined in the **package.json** file using npm:
@@ -76,7 +76,6 @@ Install the necessary project dependencies as defined in the **package.json** fi
 ```bash
   npm install
 ```
-
 
 ### 3. Install Playwright Browsers:
 
@@ -94,7 +93,6 @@ After the successful installation, all the project configuration will be enlist 
 
 In order to run this automation testing framework locally, please refer the following sections carefully:
 
-
 ### 1. Running tests in the Same Browser Context (Serial Execution):
 
 **Test Suite-1-Q1:** To run all the test cases of this test suite in a same browser context serially, execute:
@@ -103,13 +101,11 @@ In order to run this automation testing framework locally, please refer the foll
   npm run Q1serial
 ```
 
-
 **Test Suite-2-Q2:** To run all the test cases of this test suite in a same browser context serially, execute:
 
 ```bash
   npm run Q2serial
 ```
-
 
 **Test Suite-3-Q3:** to run all the test cases of this test suite in a same browser context serially, execute:
 
@@ -117,14 +113,13 @@ In order to run this automation testing framework locally, please refer the foll
   npm run Q3serial
 ```
 
-
 **Run All Sequentially:** To run ALL the test suites (Q1, Q2, Q3) sequentially in a same browser context, execute:
 
 ```bash
   npm run serial
 ```
 
-
+<br>
 
 ### 2. Running tests in Individual Browser Contexts (Parallel Execution):
 
@@ -134,13 +129,11 @@ In order to run this automation testing framework locally, please refer the foll
   npm run Q1parallel
 ```
 
-
 **Test Suite-2-Q2:** Run all the test cases of this test suite in individual browser context parallelly, execute:
 
 ```bash
   npm run Q2parallel
 ```
-
 
 **Test Suite-3-Q3:** Run all the test cases of this test suite in individual browser context parallelly, execute:
 
@@ -148,14 +141,11 @@ In order to run this automation testing framework locally, please refer the foll
   npm run Q3parallel
 ```
 
-
 **Run all Parallelly:** In order to run ALL the test suites in multiple browser context parallelly, execute:
 
 ```bash
   npm run parallel
 ```
-
-
 
 ### 3. Running all tests in both Execution mode:
 
@@ -174,7 +164,6 @@ Run all the test cases of all the test suits available in this project both seri
 ```bash
   npm run reportAllure
 ```
-
 
 **HTML Reporter:** To generate the playwright default HTML report after the test execution, run:
 
@@ -203,7 +192,6 @@ In order to close the currently generated report in your browser, run:
     {name: 'webkit', use: { ...devices['Desktop Safari'] },},
 ```
 
-
 - To run the test suites in **two same browsers** (workers) at a time, then run in two same browsers of other type (if available), replace/overwrite the following properties of the **playwright.config.js** file:
 
 ```bash
@@ -214,7 +202,6 @@ In order to close the currently generated report in your browser, run:
     {name: 'Firefox', use: { browserName: 'firefox' },},
     {name: 'webkit', use: { ...devices['Desktop Safari'] },},
 ```
-
 
 - To run the test suites in **all the available browsers** parallelly based on the number of CPU cores on your machine, replace the following properties of **playwright.config.js** file (prone to CPU race condition):
 
@@ -245,6 +232,7 @@ In order to close the currently generated report in your browser, run:
 - **Run All Sequentially:** Running ALL the test suites (Q1, Q2, Q3) sequentially in a same browser context:
   - URL: https://drive.google.com/file/d/17b7uM_i0RzVnFc2j6PrgNQP9yLktk6xP/view?usp=sharing
 
+<br>
 
 ### 2. Running tests in Individual Browser Contexts (Parallel Execution):
 
@@ -260,6 +248,7 @@ In order to close the currently generated report in your browser, run:
 - **Run all Parallelly:** Running ALL the test suites in multiple browser context parallelly:
   - URL: https://drive.google.com/file/d/1VyMRVFvBrHyjl5uZI177UmEgNlb4kFO2/view?usp=sharing
 
+<br>
 
 ### 3. Running all tests in both Execution mode:
 
