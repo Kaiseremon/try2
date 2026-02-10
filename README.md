@@ -197,17 +197,44 @@ In order to close the currently generated report in your browser, run:
 
 
 
-## G. Cross-Browser Testing:##
+## G. Cross-Browser Testing:
 
-In order to run the test suits in Multiple browsers as Cross-Platform manner, setup the **playwright.config.js** file as bellow:
+To run the test suites in **one** browser (workers) at a time, then to run in another type of browser (if available), replace/overwrite the following properties of the **playwright.config.js** file:
 
-| Environment Scenario | Setup following properties in ‘playwright.config.js’ file |
-|----------------------|-----------------------------------------------------------|
-|Run test suites in one browser at a time, then run in another type of browser | fullyParallel: true,
-                                                                                 workers: process.env.CI ? 1 : 2,
-                                                                                 projects: [{name: 'Chromium', use: { browserName: 'chromium' },},{name: 'Firefox', use: { browserName: 'firefox' },},{name: 'webkit', use: { ...devices['Desktop Safari'] },},|
-| git pull | Update local branch |
-| git push | Upload changes |
+```bash
+  fullyParallel: true,
+  workers: process.env.CI ? 1 : 1,
+  projects: [
+    {name: 'Chromium', use: { browserName: 'chromium' },},
+    {name: 'Firefox', use: { browserName: 'firefox' },},
+    {name: 'webkit', use: { ...devices['Desktop Safari'] },},
+```
+
+
+To run the test suites in **two same browsers** (workers) at a time, then run in two same browsers of other type (if available), replace/overwrite the following properties of the **playwright.config.js** file:
+
+```bash
+  fullyParallel: true,
+  workers: process.env.CI ? 1 : 2,
+  projects: [
+    {name: 'Chromium', use: { browserName: 'chromium' },},
+    {name: 'Firefox', use: { browserName: 'firefox' },},
+    {name: 'webkit', use: { ...devices['Desktop Safari'] },},
+```
+
+
+To run the test suites in **all the available browsers** (workers) parallelly based on the number of CPU cores on your machine, replace/overwrite the following properties of the **playwright.config.js** file:
+
+```bash
+  fullyParallel: true,
+  workers: process.env.CI ? 1 : undefined,
+  projects: [
+    {name: 'chromium', use: { ...devices['Desktop Chrome'] },},
+    {name: 'firefox', use: { ...devices['Desktop Firefox'] },},
+    {name: 'webkit', use: { ...devices['Desktop Safari'] },},
+```
+
+
 
 
 
