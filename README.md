@@ -23,7 +23,7 @@ The objective of this project is to perform automated UI and functionality testi
 
 ## B. Documentation
 
-In this project, the UI and feature functionality of the SwagLabs website have been analysed. Based on the analysis, a detailed test case scenarios have been written on the above mentioned test suites to perform automated testing.
+In this project, the UI and feature functionalities of the SwagLabs website have been analyzed. Based on the analysis, a detailed test case scenarios have been written on the above mentioned test suites to perform automated testing.
 
 This is a page object model (**POM**) based automation framework.
 
@@ -51,7 +51,7 @@ If you have not installed already, the following tools are required to install i
 ## D. Install Dependencies:
 
 In order to run this automation framework locally, please refer the following sections carefully:
-1. Open VS code.
+1. Open the VS Code editor.
 2. Open terminal (… → Terminal → New Terminal).
 
 
@@ -257,7 +257,7 @@ In order to close the currently generated report in your browser, run:
 
 <br>
 
-## Authors
+## Author
 
 [@Kaiseremon](https://github.com/Kaiseremon)
 
