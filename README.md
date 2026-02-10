@@ -203,13 +203,9 @@ In order to run the test suits in Multiple browsers as Cross-Platform manner, se
 
 | Environment Scenario | Setup following properties in ‘playwright.config.js’ file |
 |----------------------|-----------------------------------------------------------|
-|Run the test suites in one browser (workers) at a time, then to run in another type of browser (if available) | fullyParallel: true,
-workers: process.env.CI ? 1 : 2,
-projects: [
-    {name: 'Chromium', use: { browserName: 'chromium' },},
-    {name: 'Firefox', use: { browserName: 'firefox' },},
-    {name: 'webkit', use: { ...devices['Desktop Safari'] },},
- |
+|Run test suites in one browser at a time, then run in another type of browser | fullyParallel: true,
+                                                                                 workers: process.env.CI ? 1 : 2,
+                                                                                 projects: [{name: 'Chromium', use: { browserName: 'chromium' },},{name: 'Firefox', use: { browserName: 'firefox' },},{name: 'webkit', use: { ...devices['Desktop Safari'] },},|
 | git pull | Update local branch |
 | git push | Upload changes |
 
