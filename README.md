@@ -19,7 +19,7 @@ The objective of this project is to perform automated UI and functionality testi
 
 3. **Test Suite-3-Q3:** Login with *‘performance_glitch_user’* and reset the App State. Then filter by name (Z to A) and select the first product into the cart. Then navigate up to the final checkout page and verify all the products' names and the total price. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
 
-
+<br>
 
 ## B. Documentation
 
@@ -33,7 +33,7 @@ The framework structure follows Test Driven Development (**TDD**) approach. The 
  
 Besides, **Allure reporter** is used to get the report after completing the test execution. This helps to generate report and take screenshot when a step become failed.
 
-
+<br>
 
 ## C. Prerequisites:
 
@@ -47,6 +47,7 @@ If you have not installed already, the following tools are required to install i
 | [VS Code](https://code.visualstudio.com/) | Open-source code editor |
 | [Git CLI](https://git-scm.com/install/) | To sync with GitHub |
 
+<br>
 
 ## D. Install Dependencies:
 
@@ -87,8 +88,7 @@ To install the Playwright **browser binaries** (Chromium, Firefox, and Webkit), 
 
 After the successful installation, all the project configuration will be enlist inside the **playwright.config.js** file.
 
-
-
+<br>
 
 ## E. Run the test case scenarios Locally:
 
@@ -165,7 +165,7 @@ Run all the test cases of all the test suits available in this project both seri
   npm run test
 ```
 
-
+<br>
 
 ## F. Get Test Report after the execution:
 
@@ -188,7 +188,7 @@ In order to close the currently generated report in your browser, run:
   ctrl+c
 ```
 
-
+<br>
 
 ## G. Cross-Browser Testing:
 
@@ -227,6 +227,7 @@ In order to close the currently generated report in your browser, run:
     {name: 'webkit', use: { ...devices['Desktop Safari'] },},
 ```
 
+<br>
 
 ## H. Demo Videos on each execution:
 
@@ -265,7 +266,7 @@ In order to close the currently generated report in your browser, run:
 - **Full suite journey:** Running all the test cases of all the test suits available in this project both serial and parallel context:
   - URL: https://drive.google.com/file/d/1wH7PPoLBqJXD-PtGXTH4p1AtE1vm1hMx/view?usp=sharing
 
-
+<br>
 
 ## Authors
 
