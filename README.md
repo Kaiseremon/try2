@@ -1,38 +1,44 @@
 # Swag Labs UI Automation
 
-This project aims to built an end-to-end automation testing framework for [SwagLabs](https://www.saucedemo.com/) website
-using Microsoft Playwright with JavaScript.
+This project aims to built an automation testing framework for [Swag Labs](https://www.saucedemo.com/) website
+using Playwright with JavaScript.
 
-Project URL: https://www.saucedemo.com/
+- Project URL: https://www.saucedemo.com/
 
-Packages: playwright, playwright-core. Jest, chai, allure-playwright, allure-commandline.
+- Packages used: playwright, playwright-core. Jest, chai, allure-playwright, allure-commandline.
+
+
 
 ## Authors
 
 - [@Kaiseremon](https://github.com/Kaiseremon)
 
+
+
 ## Objective:
 
-The objective of this project is to perform automated UI and functionality testing, cross-browser execution, screenshot/video capture, and test reporting on [SwagLabs](https://www.saucedemo.com/) website based on the following scenarios:
+The objective of this project is to perform automated UI and functionality testing, cross-browser execution, screenshot/video capture, and test reporting on Swag Labs website based on the following scenarios:
 
 1. **Test Suite-1-Q1:** Try login with *‘locked_out_user’* and verify the error message.
 
-2. **Test Suite-2-Q2:** Log in with *‘standard_user’*. Then, from the hamburger menu, reset the App State. Add any three items to the cart. Navigate to the final checkout page, verify the product name and total price. Finish the purchase and verify the successful order message. Then, reset the App State again and log out.
+2. **Test Suite-2-Q2:** Log in with *‘standard_user’*. Then, from the hamburger menu, *reset the App State. Add any three items to the cart. Navigate to the final checkout page, verify the product name and total price. Finish the purchase and verify the successful order message. Then, reset the App State again and log out.
 
-3. Test Suite-3-Q3: Login with *‘performance_glitch_user’* and reset the App State. Then filter by name (Z to A) and select the first product into the cart. Then navigate up to the final checkout page and verify all the products' names and the total price. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
+3. **Test Suite-3-Q3:** Login with *‘performance_glitch_user’* and reset the App State. Then filter by name (Z to A) and select the first product into the cart. Then navigate up to the final checkout page and verify all the products' names and the total price. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
+
 
 
 ## Prerequisites:
 
 If you have not installed already, the following tools are required to install in order to run this project flawlessly:
 
-- [Node 16 to latest version and npm package manager to run Playwright using JavaScript](https://nodejs.org/)  
+- [Node.js and npm](https://nodejs.org/) package manager to run Playwright using JavaScript.  
 
-- [Java JDK 11 or higher version to run allure-commanline](https://www.oracle.com/java/technologies/downloads/)  
+- [Java JDK 11/17](https://www.oracle.com/java/technologies/downloads/) to run allure-commanline. 
 
-- [VS Code as the open-source code editor](https://code.visualstudio.com/)
+- [VS Code](https://code.visualstudio.com/) as the open-source code editor.
 
-- [Git CLI to sync with GitHub](https://git-scm.com/install/)
+- [Git CLI](https://git-scm.com/install/) to sync with GitHub.
+
 
 
 ## Documentation
@@ -46,6 +52,7 @@ Where **Playwright** is used as the automation tools and **Jest** is used to cre
 The framework structure follows Test Driven Development (**TDD**) approach. The detailed test case scenarios can be found in the *'TestScenario.txt'* file inside the *'documents'* folder.
  
 Besides, **Allure reporter** is used to get the report after completing the test execution. This helps to generate report and take screenshot when a step become failed.
+
 
 
 ## Run Locally
@@ -76,12 +83,11 @@ Install the necessary project dependencies as defined in the 'package.json' file
   npm install
 ```
 
-To install the Playwright browser binaries (Chromium, Firefox, and Webkit), run the following command in the terminal:
+To install the Playwright browser binaries (Chromium, Firefox, and Webkit), run the following command:
 
 ```bash
   npx playwright install
 ```
-
 
 test configuration is available inside: playwright.config.js
 
