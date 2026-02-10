@@ -15,7 +15,7 @@ using Playwright with JavaScript.
 
 
 
-## Objective:
+## A. Objective:
 
 The objective of this project is to perform automated UI and functionality testing, cross-browser execution, screenshot/video capture, and test reporting on Swag Labs website based on the following scenarios:
 
@@ -27,21 +27,7 @@ The objective of this project is to perform automated UI and functionality testi
 
 
 
-## Prerequisites:
-
-If you have not installed already, the following tools are required to install in order to run this project flawlessly:
-
-- [Node.js and npm](https://nodejs.org/) package manager to run Playwright using JavaScript.  
-
-- [Java JDK 11/17](https://www.oracle.com/java/technologies/downloads/) to run allure-commanline. 
-
-- [VS Code](https://code.visualstudio.com/) as the open-source code editor.
-
-- [Git CLI](https://git-scm.com/install/) to sync with GitHub.
-
-
-
-## Documentation
+## B. Documentation
 
 In this project, the UI and feature functionality of the SwagLabs website have been analysed. Based on the analysis, a detailed test case scenarios have been written on the above mentioned test suites to perform automated testing.
 
@@ -55,7 +41,21 @@ Besides, **Allure reporter** is used to get the report after completing the test
 
 
 
-## Installations
+## C. Prerequisites:
+
+If you have not installed already, the following tools are required to install in order to run this project flawlessly:
+
+- [Node.js and npm](https://nodejs.org/) package manager to run Playwright using JavaScript.  
+
+- [Java JDK 11/17](https://www.oracle.com/java/technologies/downloads/) to run allure-commanline. 
+
+- [VS Code](https://code.visualstudio.com/) as the open-source code editor.
+
+- [Git CLI](https://git-scm.com/install/) to sync with GitHub.
+
+
+
+## D. Installal Dependencies:
 
 In order to run this automation testing framework locally, please refer the following sections carefully:
 
@@ -96,7 +96,8 @@ After the successful installation, all the project configuration will be enlist 
 
 
 
-## Run the test case scenarios Locally:
+
+## E. Run the test case scenarios Locally:
 
 In order to run this automation testing framework locally, please refer the following sections carefully:
 
@@ -173,7 +174,7 @@ Run all the test cases of all the test suits available in this project both seri
 
 
 
-### 4. Get Test Report after the execution:
+## F. Get Test Report after the execution:
 
 **Allure Reporter:** To generate and view ALLURE report after the test execution, run:
 
