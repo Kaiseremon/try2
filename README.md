@@ -9,12 +9,6 @@ using Playwright with JavaScript.
 
 
 
-## Authors
-
-- [@Kaiseremon](https://github.com/Kaiseremon)
-
-
-
 ## A. Objective:
 
 The objective of this project is to perform automated UI and functionality testing, cross-browser execution, screenshot/video capture, and test reporting on Swag Labs website based on the following scenarios:
@@ -45,17 +39,16 @@ Besides, **Allure reporter** is used to get the report after completing the test
 
 If you have not installed already, the following tools are required to install in order to run this project flawlessly:
 
-- [Node.js and npm](https://nodejs.org/) package manager to run Playwright using JavaScript.  
 
-- [Java JDK 11/17](https://www.oracle.com/java/technologies/downloads/) to run allure-commanline. 
+| Tools | Scope |
+|--------|------------|
+| [Node.js](https://nodejs.org/) | npm package manager to run Playwright using JavaScript |
+| [Java JDK](https://www.oracle.com/java/technologies/downloads/) | To run allure-commanline |
+| [VS Code](https://code.visualstudio.com/) | Open-source code editor |
+| [Git CLI](https://git-scm.com/install/) | To sync with GitHub |
 
-- [VS Code](https://code.visualstudio.com/) as the open-source code editor.
 
-- [Git CLI](https://git-scm.com/install/) to sync with GitHub.
-
-
-
-## D. Installal Dependencies:
+## D. Install Dependencies:
 
 In order to run this automation testing framework locally, please refer the following sections carefully:
 
@@ -183,7 +176,7 @@ Run all the test cases of all the test suits available in this project both seri
 ```
 
 
-**HTML Reportar:** To generate the playwright default HTML report after the test execution, run:
+**HTML Reporter:** To generate the playwright default HTML report after the test execution, run:
 
 ```bash
   npm run reportHTML
@@ -199,7 +192,7 @@ In order to close the currently generated report in your browser, run:
 
 ## G. Cross-Browser Testing:
 
-To run the test suites in **one** browser (workers) at a time, then to run in another type of browser (if available), replace/overwrite the following properties of the **playwright.config.js** file:
+- To run the test suites in **one** browser (workers) at a time, then to run in another type of browser (if available), replace/overwrite the following properties of the **playwright.config.js** file:
 
 ```bash
   fullyParallel: true,
@@ -211,7 +204,7 @@ To run the test suites in **one** browser (workers) at a time, then to run in an
 ```
 
 
-To run the test suites in **two same browsers** (workers) at a time, then run in two same browsers of other type (if available), replace/overwrite the following properties of the **playwright.config.js** file:
+- To run the test suites in **two same browsers** (workers) at a time, then run in two same browsers of other type (if available), replace/overwrite the following properties of the **playwright.config.js** file:
 
 ```bash
   fullyParallel: true,
@@ -223,7 +216,7 @@ To run the test suites in **two same browsers** (workers) at a time, then run in
 ```
 
 
-To run the test suites in **all the available browsers** parallelly based on the number of CPU cores on your machine, replace the following properties of **playwright.config.js** file (prone to CPU race condition):
+- To run the test suites in **all the available browsers** parallelly based on the number of CPU cores on your machine, replace the following properties of **playwright.config.js** file (prone to CPU race condition):
 
 ```bash
   fullyParallel: true,
@@ -235,47 +228,46 @@ To run the test suites in **all the available browsers** parallelly based on the
 ```
 
 
-=====================================
-======================================
-
 ## H. Demo Videos on each execution:
 
 ### 1. Running tests in the Same Browser Context (Serial Execution):
 
 - **Test Suite-1-Q1:** Running all the test cases of this test suite in a same browser context serially:
-  - URL:https://drive.google.com/file/d/1YxGRwqFixKs_ZLF76lMpSng1kg3i9-Cl/view?usp=sharing
+  - URL: https://drive.google.com/file/d/1YxGRwqFixKs_ZLF76lMpSng1kg3i9-Cl/view?usp=sharing
 
 - **Test Suite-2-Q2:** Running all the test cases of this test suite in a same browser context serially:
-  - URL:https://drive.google.com/file/d/1cyn3d_LqbYApYhFm8Vp5MQhrJrJBNtkY/view?usp=sharing
+  - URL: https://drive.google.com/file/d/1cyn3d_LqbYApYhFm8Vp5MQhrJrJBNtkY/view?usp=sharing
 
 - **Test Suite-3-Q3:** Running all the test cases of this test suite in a same browser context serially:
-  - URL:https://drive.google.com/file/d/1ucSZYlo-Kxv6yKwd_7ETGevS-x0qZOk8/view?usp=sharing
+  - URL: https://drive.google.com/file/d/1ucSZYlo-Kxv6yKwd_7ETGevS-x0qZOk8/view?usp=sharing
 
 - **Run All Sequentially:** Running ALL the test suites (Q1, Q2, Q3) sequentially in a same browser context:
-  - URL:https://drive.google.com/file/d/17b7uM_i0RzVnFc2j6PrgNQP9yLktk6xP/view?usp=sharing
+  - URL: https://drive.google.com/file/d/17b7uM_i0RzVnFc2j6PrgNQP9yLktk6xP/view?usp=sharing
 
 
 ### 2. Running tests in Individual Browser Contexts (Parallel Execution):
 
 - **Test Suite-1-Q1:** Running all the test cases of this test suite in individual browser context parallelly:
-  - URL:https://drive.google.com/file/d/10hPirdH27JIVHbw_9R9Xp9CIuizWef0F/view?usp=sharing
+  - URL: https://drive.google.com/file/d/10hPirdH27JIVHbw_9R9Xp9CIuizWef0F/view?usp=sharing
 
 - **Test Suite-2-Q2:** Running all the test cases of this test suite in individual browser context parallelly:
-  - URL:https://drive.google.com/file/d/1FgULTu3aGhunVno04qylD9Kb2czaLbaK/view?usp=sharing
+  - URL: https://drive.google.com/file/d/1FgULTu3aGhunVno04qylD9Kb2czaLbaK/view?usp=sharing
 
 - **Test Suite-3-Q3:** Running all the test cases of this test suite in individual browser context parallelly:
-  - URL:https://drive.google.com/file/d/1cybIHy7mBdT4v8nn8guHf0kXTabt7J9L/view?usp=sharing
+  - URL: https://drive.google.com/file/d/1cybIHy7mBdT4v8nn8guHf0kXTabt7J9L/view?usp=sharing
 
 - **Run all Parallelly:** Running ALL the test suites in multiple browser context parallelly:
-  - URL:https://drive.google.com/file/d/1VyMRVFvBrHyjl5uZI177UmEgNlb4kFO2/view?usp=sharing
+  - URL: https://drive.google.com/file/d/1VyMRVFvBrHyjl5uZI177UmEgNlb4kFO2/view?usp=sharing
 
 
 ### 3. Running all tests in both Execution mode:
 
 - **Full suite journey:** Running all the test cases of all the test suits available in this project both serial and parallel context:
-  - URL:https://drive.google.com/file/d/1wH7PPoLBqJXD-PtGXTH4p1AtE1vm1hMx/view?usp=sharing
+  - URL: https://drive.google.com/file/d/1wH7PPoLBqJXD-PtGXTH4p1AtE1vm1hMx/view?usp=sharing
 
 
 
+## Authors
 
+[@Kaiseremon](https://github.com/Kaiseremon)
 
