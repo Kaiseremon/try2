@@ -1,6 +1,6 @@
 # Swag Labs UI Automation
 
-This project aims to build an automation testing framework for the [Swag Labs](https://www.saucedemo.com/) website using Playwright with JavaScript.
+This project aims to build an end to end automated UI and functionality testing framework for the [Swag Labs](https://www.saucedemo.com/) website using Microsoft playwright with JavaScript.
 
 - Project URL: https://www.saucedemo.com/
 
@@ -14,9 +14,13 @@ The objective of this project is to perform automated UI and functionality testi
 
 1. **Test Suite-1-Q1:** Try log in with all the available user names, and verify successful user login/logout actions.
 
+<p align="justify">
 2. **Test Suite-2-Q2:** Log in with *‘standard_user’*. Then, from the hamburger menu, reset the App State. Add any three items to the cart. Navigate to the final checkout page, verify the product name and total price. Finish the purchase and verify the successful order message. Then, reset the App State again and log out.
+</p>
 
+<p align="justify">
 3. **Test Suite-3-Q3:** Log in with *‘performance_glitch_user’* and reset the App State. Then filter by name (Z to A) and select the first product in the cart. Then navigate up to the final checkout page and verify all the product names and the total price added. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
+</p>
 
 <br>
 
