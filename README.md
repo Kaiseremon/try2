@@ -1,6 +1,6 @@
 # Swag Labs UI Automation
 
-This project aims to build an end to end automated UI and functionality testing framework for the [Swag Labs](https://www.saucedemo.com/) website using Microsoft playwright with JavaScript.
+This project aims to build an end to end automated UI and functionality testing framework using Microsoft playwright with JavaScript for the [Swag Labs](https://www.saucedemo.com/) website.
 
 - Project URL: https://www.saucedemo.com/
 
@@ -14,13 +14,9 @@ The objective of this project is to perform automated UI and functionality testi
 
 1. **Test Suite-1-Q1:** Try log in with all the available user names, and verify successful user login/logout actions.
 
-<p align="justify">
 2. **Test Suite-2-Q2:** Log in with *‘standard_user’*. Then, from the hamburger menu, reset the App State. Add any three items to the cart. Navigate to the final checkout page, verify the product name and total price. Finish the purchase and verify the successful order message. Then, reset the App State again and log out.
-</p>
 
-<p align="justify">
 3. **Test Suite-3-Q3:** Log in with *‘performance_glitch_user’* and reset the App State. Then filter by name (Z to A) and select the first product in the cart. Then navigate up to the final checkout page and verify all the product names and the total price added. Then finish the purchase journey and verify the successful order message. Then, reset the App State again and log out.
-</p>
 
 <br>
 
@@ -66,13 +62,13 @@ To get this project on your local machine, open the VS Code terminal and run the
 git clone https://github.com/Kaiseremon/automation-playwright-swagLabs.git
 ```
 
-Then go to the local directory where the project is downloaded and select the branch *automation-playwright-SwagLabs*.
+Then go to the local directory where the project is downloaded and select *automation-playwright-SwagLabs*.
 
 ```bash
-cd automation-playwright-swagLabs
+cd automation-playwright-SwagLabs
 ```
 
-Once you are in the *automation-playwright-swagLabs* folder, run the command below to open the project in VS Code file explorer:
+Once you are in *automation-playwright-swagLabs* folder, run the command to open the project in VS Code file explorer:
 
 ```bash
 code .
@@ -98,9 +94,9 @@ npx playwright install
 
 <br>
 
-## E. Run the test case scenarios Locally:
+## E. Run the test case scenarios locally:
 
-Execute the following commands in your **terminal** to run this automation testing project locally on the Swag Labs website on various aspects:
+Execute the following commands in your **terminal** to run this automation testing project locally in your machine:
 
 ### 1. Automate tests in the Same Browser Context (Serial Execution):
 
@@ -122,7 +118,7 @@ npm run Q2serial
 npm run Q3serial
 ```
 
-**Run All Sequentially:** To run ALL the test suites (Q1, Q2, Q3) at once sequentially in the same browser context, execute:
+**Run All Sequentially:** To run ALL the test suites (Q1, Q2, Q3) at once sequentially in the same browser, execute:
 
 ```bash
 npm run serial
@@ -166,6 +162,7 @@ To run all the test suites (Q1, Q2, Q3) at once in the same browser context sequ
 npm run test
 ```
 
+<br>
 
 ### 4. Automate all the tests of all the test suites in serial, parallel, and shared browser context:
 
@@ -275,6 +272,7 @@ ctrl+c
 - **Shared Context:** Running all the test suites (Q1, Q2, Q3) at once in the same browser sequentially:
   - URL:
 
+<br>
 
 ### 4. Automate tests of all test suites in serial, parallel, and shared browser context:
 
