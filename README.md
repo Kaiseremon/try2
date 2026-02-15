@@ -1,6 +1,6 @@
 # Swag Labs UI Automation
 
-This project aims to build an end to end automated UI and functionality testing framework using Microsoft playwright with JavaScript for the [Swag Labs](https://www.saucedemo.com/) website.
+This project aims to build an automated testing framework using playwright with JavaScript for the [Swag Labs](https://www.saucedemo.com/) website.
 
 - Project URL: https://www.saucedemo.com/
 
@@ -59,7 +59,7 @@ In order to run this automation framework locally, please refer to the following
 To get this project on your local machine, open the VS Code terminal and run the following git command:
 
 ```bash
-git clone https://github.com/Kaiseremon/automation-playwright-swagLabs.git
+git clone https://github.com/Kaiseremon/automation-playwright-SwagLabs.git
 ```
 
 Then go to the local directory where the project is downloaded and select *automation-playwright-SwagLabs*.
@@ -68,7 +68,7 @@ Then go to the local directory where the project is downloaded and select *autom
 cd automation-playwright-SwagLabs
 ```
 
-Once you are in *automation-playwright-swagLabs* folder, run the command to open the project in VS Code file explorer:
+Once you are in the *automation-playwright-SwagLabs* folder, open the project in VS Code file explore running:
 
 ```bash
 code .
