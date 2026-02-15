@@ -1,6 +1,6 @@
 # Swag Labs UI Automation
 
-This project aims to build an end to end automation testing framework for the [Swag Labs](https://www.saucedemo.com/) website using Playwright with JavaScript.
+This project aims to build an automation testing framework for the [Swag Labs](https://www.saucedemo.com/) website using Playwright with JavaScript.
 
 - Project URL: https://www.saucedemo.com/
 
